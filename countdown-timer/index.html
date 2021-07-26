@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Countdown Timer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="section">
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="top">
+                <div class="centered">
+                    <h1>Countdown Timer</h1>
+
+                    <input type="date" id="date-picker" class="input">
+                    <button onclick="continuous()" style="visibility: hidden;">submit</button>
+                </div>
+                <div class="container">
+                    <div class="days-container">
+                        <p class="big-text" id="days">0</p>
+                        <span class="attribute">days</span>
+                    </div>
+                    <div class="hours-container">
+                        <p class="big-text" id="hours">0</p>
+                        <span class="attribute">hours</span>
+                    </div>
+                    <div class="mins-container">
+                        <p class="big-text" id="mins">0</p>
+                        <span class="attribute">mins</span>
+                    </div>
+                    <div class="seconds-container">
+                        <p class="big-text" id="seconds">0</p>
+                        <span class="attribute">seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

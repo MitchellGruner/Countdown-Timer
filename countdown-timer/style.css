@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 4rem;
+    margin-top: -5rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+}
+
+.attribute {
+    font-size: 1.5rem;
+}
+
+.days-container, .hours-container, .mins-container, .seconds-container {
+    text-align: center;
+    color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered {
+    text-align: center;
+}
+
+.input {
+    min-width: 15%;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.top {
+    z-index: 1;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
